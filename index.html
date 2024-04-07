@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>DogComfort</title>
+  </head>
+  <body>
+    <div>
+      <div class="container">
+        <div class="wrapper">
+          <div
+            class="wrapper-img"
+            style="background-image: url(images/photo.jpg)"
+          >
+            <div class="wrapper-img--text">
+              <h1 class="wrapper-img--text-title">DogComfort</h1>
+              <span class="wrapper-img--text-subtitle">отель для собак</span>
+            </div>
+          </div>
+          <div class="wrapper-form">
+            <form class="form">
+              <h2 class="form__title">
+                Оставьте заявку,<br />
+                и мы позаботимся о вашем питомце!
+              </h2>
+
+              <div class="form__id">
+                <label class="form__label" for="number">ID заявки</label>
+                <input
+                  type="number"
+                  name="number"
+                  id=""
+                  placeholder="12-1234"
+                />
+              </div>
+              <div class="form__user">
+                <div class="form__box">
+                  <label class="form__label">Имя<span>*</span></label>
+                  <input type="text" placeholder="Как зовут питомца?" />
+                </div>
+
+                <div class="form__box">
+                  <label class="form__label">Дата рождения<span>*</span></label>
+                  <input type="text" placeholder="ДД.ММ.ГГГГ" />
+                </div>
+
+                <div class="form__box">
+                  <label class="form__label">Пол<span>*</span></label>
+
+                  <div class="form__radio">
+                    <label>
+                      <input
+                        class="form__radio--input visually-hidden"
+                        type="radio"
+                        name="gender"
+                        value="men"
+                      />
+                      <span>Мальчик</span>
+                    </label>
+
+                    <label>
+                      <input
+                        class="form__radio--input visually-hidden"
+                        type="radio"
+                        name="gender"
+                        value="women"
+                      />
+                      <span>Девочка</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form__box">
+                  <label class="form__label"
+                    >Стерилизована / кастрирован<span>*</span></label
+                  >
+
+                  <div class="form__radio">
+                    <label>
+                      <input
+                        class="form__radio--input visually-hidden"
+                        type="radio"
+                        name="type"
+                        value="yes"
+                      />
+                      <span>Да</span>
+                    </label>
+
+                    <label>
+                      <input
+                        class="form__radio--input visually-hidden"
+                        type="radio"
+                        name="type"
+                        value="no"
+                        checked
+                      />
+                      <span>Нет</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form__textarea">
+                <label>Дополнительная информация</label>
+                <textarea>Расскажите нам про особенности и питание</textarea>
+              </div>
+              <h2 class="form__title">Личная информация</h2>
+              <div class="form__user">
+                <div>
+                  <label class="form__label">Ваше имя<span>*</span></label>
+                  <input type="text" placeholder="Как вас зовут?" />
+                </div>
+
+                <div>
+                  <label class="form__label"
+                    >Телефон для связи<span>*</span></label
+                  >
+                  <input type="tel" placeholder="+7 (___) ___-__-__" />
+                </div>
+              </div>
+
+              <div class="form__select">
+                <label class="form__label">Район города</label>
+                <select name="form__select">
+                  <option selected>Выберите район</option>
+                  <option value="t1">Канавинский район</option>
+                  <option value="t2">Автозаводский район</option>
+                  <option value="t3">Сормовский район</option>
+                </select>
+              </div>
+            </form>
+            <div>
+              <label for="person">
+                <input
+                  class="form__input--checkbox visually-hidden"
+                  id="person"
+                  type="checkbox"
+                />
+                <span>Согласен(-а) на обработку персональных данных</span>
+              </label>
+            </div>
+            <button class="form__button" type="submit">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
